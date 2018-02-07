@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>I</title>
+
+   <meta charset="utf-8">
+   <meta name="description" content="Описание сайта">
+   <meta name="keywords" content="ruby,ruby on rails,javascript">
+   <meta name="author" content="Danila Babanov">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href="styles.css">
+
+   <style>
+     body {
+      background: #ccc;
+     }
+   </style>
+ </head>
+
+<body>
+
+<header>Шапка</header>
+<main>
+  включает в себя содержимое, которое является уникальным для данного документа, 
+  и не должен включать повторяющиеся разделы сайта, такие как навигация, название сайта, 
+  логотип, поисковая форма, баннеры и др.
+  <br> < yield > Уникальный контент
+</main>
+<footer>Подвал</footer>
+
+<nav>
+  <a href="#">Главная</a>
+  <a href="#">Блог</a>
+</nav>
+
+<select>
+  <optgroup label="Машины">
+    <option value="volvo">Лада</option>
+    <option value="saab">Сааб</option>
+  </optgroup>
+</select>
+
+<p>Определяет область, в которую выводится информация, преимущественно с помощью скриптов</p>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  <input type="range"  id="a" value="1">
+  <input type="number" id="b" value="0">
+
+  <output name="x" for="a b"></output>
+</form>
+
+<p>Просто текст</p>
+
+<picture>
+  <source srcset="img/ruby.svg">
+  <img src="img/ruby.png" width="256" height="256" alt="HTML5">
+</picture>
+
+<pre></pre>
+<pre>
+  Отображает        пробелы
+</pre>
+
+<progress value="70" max="100"></progress>
+<p>Прогресс бар</p>
+
+<p><s>Зачеркнутый текст</s></p>
+
+<p id="welcome"></p>
+<p id="by"></p>
+
+<script>
+  document.getElementById('welcome').innerHTML = 'Добро пожаловать!';
+</script>
+
+<script src="script.js"></script>
+
+<article>
+  <section>
+    <h1>Section</h1>
+    <p>(Т.е. проще говоря section это аналог тега li только для блоков страницы)</p>
+  </section>
+  <section>
+    <h1>Section</h1>
+    <p>(Т.е. проще говоря section это аналог тега li только для блоков страницы)</p>
+  </section>
+</article>
+
+<select required>
+  <option>Выберите из списка</option>
+  <option value="eda">Еда</option>
+  <option value="voda">Вода</option>
+</select>
+
+<form id="cafe" action="/" method="get"></form>
+
+<select form="cafe" multiple name="array" size="2">
+  <option value="eda">Еда</option>
+  <option value="voda">Вода</option>
+</select>
+
+<p><input type="submit" form="cafe" value="Отправить"></p>
+
+<small>Уменьшает размер шрифта на единицу по сравнению с обычным текстом</small>
+
+<p>Текст <span style="color: red;">перекрасить</span></p>
+
+<p><strong>для выделения важного текста</strong></p>
+
+<p>1м<sup>2</sup></p>
+<p>1м<sub>2</sub></p>
+
+
+
+</body> 
+</html>

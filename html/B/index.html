@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>B</title>
+   <meta charset="utf-8">
+
+ </head>
+ <body>
+
+<b>Жирный текст</b>
+<blockquote>Цитата</blockquote>
+<br> br устанавливает перевод строки<br>
+
+<button>Кнопка</button>
+<button disabled>Неактивная кнопка</button>
+
+<p>Связывает кнопку с формой по её идентификатору.</p>
+<form id="data" action="/">
+   <p><input placeholder="Ваше имя" name="user"></p>
+</form>
+<p><button type="submit" form="data">Отправить форму</button></p>
+<p><button name="myname" type="submit">Уникальное имя кнопки</button></p>
+
+<p>Атрибут formaction редиректит после отправки</p>
+<form> 
+   <p><input placeholder="Ваше имя" name="user"></p>
+   <p><button formaction="/">Отправить</button></p>
+</form> 
+
+<p>Атрибут type</p>
+<form action="handler.php">
+  <p><input type="text" name="user"></p>
+  <p><button type="reset">Очистить форму</button> 
+  <button type="submit">Отправить форму</button></p>
+</form>
+<button type="button">Тип button</button>
+
+<button value="button">Атрибут value</button>
+<button><img src="img/ruby.png" width="16" height="16" alt="Руби" style="vertical-align: middle"> Кнопка с рисунком</button></p>
+  
+ </body> 
+</html>

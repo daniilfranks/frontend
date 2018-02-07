@@ -1,0 +1,1 @@
+document.getElementById('by').innerHTML = 'Давай до свидания!';
