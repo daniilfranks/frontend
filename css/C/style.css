@@ -1,0 +1,47 @@
+article {
+  font-family: Georgia, Arial, Helvetica, sans-serif; /* Устанавливает семейство шрифта */
+  font: 12pt sans-serif; /* размер шрифта, рубленый шрифт */
+  /* serif sans-serif cursive */
+  font-style: italic; /* normal italic Определяет начертание шрифта — обычное, курсивное или наклонное */
+  font-size: 12pt; /* Размер шрифта */
+  font-weight: bold; /* Устанавливает насыщенность шрифта bold|bolder|lighter|normal|100|200|300|400|500|600|700|800|900 */
+}
+
+.mybold {
+  font: bold italic 14pt serif; /* жирный шрифт, курсив, размер, шрифт с засечками */
+}
+
+a:link {
+  color: red; /* применяется к ссылкам, которые ещё не посещались пользователем */
+  text-decoration: none;
+}
+
+a:visited {
+  color: blue; /* Цвет посещённых ссылок */
+}
+
+a:active {
+  color: green; /* Цвет активной ссылки */ 
+}
+
+a:hover {
+  background: #000;
+  color: #fff; /* Определяет стиль элемента при наведении на него курсора мыши */
+}
+
+a.mybutton:link, a.mybutton:visited {
+  color: #fff;
+  background-color: red;
+  padding: 20px;
+}
+
+a.mybutton:hover, a.mybutton:active {
+  color: #fff;
+  background-color: green;
+}
+
+ul {
+  list-style-type: none; /* Отменяет маркеры для списка. */
+  list-style-type: decimal; /* цифры для списка. */
+  list-style-image: url('img/ruby.png'); /* фотка для списка. */
+}

@@ -1,0 +1,46 @@
+body {
+  background-color: #1E90FE;
+  color: #fff;
+  background-image: url("img/ruby.png");
+  background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  background-color: #ccc;
+}
+
+p {
+  background-color: #000;
+}
+
+.border-color {
+  background-color: #1E90FE;
+  border: 2px solid #ff6347;
+}
+
+.myborder {
+  background-color: #1E90FE;
+  border-top: 1px dotted #fff;
+  border-right: 1px dashed #ccc; 
+  border-bottom: 1px solid #000; 
+  border-left: 1px none; 
+}
+
+.my-radius {
+  padding: 50px;
+  border-radius: 90px 90px 120px 120px;
+}
+
+.background-div {
+  width: 300px;
+  height: 150px;
+  background: url("img/ruby.png") repeat-x #1E90FE;
+  background-size: cover;
+  background-size: contain;
+  background-size: 100% 100%;
+  background-size: 100% auto;
+  background-size: auto 100%;
+  background-size: auto;
+}

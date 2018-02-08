@@ -1,0 +1,85 @@
+.hi {
+  color: fff;
+  background: red;
+  padding: 10px;
+  display: inline; /*  Устанавливаем как строчный элемент */
+}
+
+.hi2 {
+  display: none; /* Скрыть элемент */
+}
+
+.bb {
+  display: block; /* Устанавливаем как блочный элемент */
+}
+
+li {
+  display: inline; /* меню в строку и отмена маркеров */
+}
+
+.inb {
+  display: inline; /*  Устанавливаем как строчный элемент */
+  display: none; /* Скрыть элемент */
+  display: block; /* Устанавливаем как блочный элемент */
+  display: inline; /* меню в строку и отмена маркеров */
+  display: inline-block; /*блочный элемент  обтекается другими элементами */
+  visibility: visible; /* Показать элемент */
+  visibility: hidden; /* Скрыть элемент но блок будет на месте */
+}
+
+.myleft {
+  float: none;
+  float: left;
+  float: right;
+  overflow: auto;
+}
+
+input:checked + span {
+  height: 20px;
+  width: 20px;
+  background: #fc0;
+}
+
+input:enabled {
+  background: #ffff00;
+}
+input[type=number]:disabled {
+  background: red;
+}
+
+
+p:first-child {
+  background: yellow;
+}
+
+p:first-child i {
+  background: yellow;
+}
+
+li:first-child {
+  background: yellow;
+}
+
+.links a:first-child {
+  border-left: none; /* Убираем первую линию слева */
+}
+
+input:focus {
+  background: red;
+  color: #000;
+}
+
+
+p:last-child {
+  background: #ff0000;
+}
+
+li:last-child {
+  background: #ff0000;
+}
+
+p:last-of-type:after {
+  content: " ◄"; /* Добавляем символ в конце текста */
+  color: #000; /* Цвет символа */
+}
+
