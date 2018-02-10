@@ -1,0 +1,25 @@
+img {
+  opacity: 0.5;
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+.transform {
+  background: #ccc;
+  width: 300px;
+  height: 150px;
+
+  transform: translate(50px, 100px); /* Сдвигает на заданное значение */
+  transform: rotate(10deg); /* Поворачивает элемент */
+  transform: scale(2,2); /* Масштабирует элемент */
+  transform: scale(0.5,0.5); /* уменьшить */
+  transform: skewX(10deg); /* Наклоняет элемент по вертикали */
+  transform: skewY(10deg); /* Наклоняет элемент по горизонтали */
+  transform: rotateX(150deg); /* Поворачивает элемент на заданный угол */
+  transform: rotateY(150deg); /* Поворачивает элемент на заданный угол */
+  transform: rotateZ(90deg); /* Поворачивает элемент на заданный угол */
+  transform-style: preserve-3d; 
+}

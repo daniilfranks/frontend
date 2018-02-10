@@ -1,0 +1,81 @@
+p:nth-child(2) {
+  background: red;
+}
+
+p:nth-child(odd) {
+  background: red;
+}
+
+p:nth-child(even) {
+  background: blue;
+}
+
+p:nth-child(3n+0) {
+  background: red;
+}
+
+input:optional {
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+input:read-only {
+  opacity: 0.3;
+}
+
+input:read-write {
+  border: 1px solid green;
+}
+
+input:required {
+  background-color: yellow;
+}
+
+.tab div {
+    display: none;
+}
+
+.tab div:target {
+    display: block;
+}
+
+
+p::first-line {
+ color: red;
+ font-style: italic;
+ font-weight: bold; 
+}
+
+p::first-letter {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2em;
+  color: green; 
+}
+
+
+.ruby:before {
+  content: "";
+  background: url("img/ruby.png");
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+.ruby:after {
+  content: "";
+  background: url("img/ruby.png");
+  background-size: contain;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+}
+
+p::selection {
+  color: #ff0;
+  background: #000;
+}
+
+input::placeholder { color: #ffd595; } 
+
