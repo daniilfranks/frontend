@@ -1,0 +1,98 @@
+/* Для загрузки одного файла из другого в Sass применяется команда @import */
+@import "reset";
+
+/* перемменая */
+$bg: #ccc;
+$text-color: #000;
+$basic-font: Arial, Tahoma, sans-serif;
+
+/* Примеси */
+@mixin my-block-style {
+  background: green;
+  color: #fff;
+  width: 180px;
+  height: 150px;
+  text-align: center;
+}
+
+body {
+  color: $text-color;
+  background: $bg;
+
+  @media only screen and (max-width: 500px) {
+    background-color: lightblue;
+  }
+}
+
+/* @extend расширяет стилевые правила у одного селектора */
+.hello {
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  font-weight: bold;
+  background: red;
+  border: 1px solid #000;
+
+  h1 {
+    color: yellow;
+  }
+
+  p {
+    color: blue;
+  }
+}
+
+.by {
+  @extend .hello;
+  background: orange;
+  border: none;
+
+  p {
+    color: $text-color;
+  }
+}
+
+.myblock {
+  @include my-block-style;
+
+  &:hover {
+    background: blue;
+  }
+}
+
+/* Sass поддерживает специальный тип селекторов под названием шаблонные селекторы. 
+   Они похожи на селекторы классов и идентификаторов 
+*/
+%for-grids {
+  @extend .hello;
+  boder: none;
+  background: tomato;
+  h1 {
+    color: #fff;
+  }
+}
+
+.grid-selector {
+  @extend %for-grids;
+}
+
+/* Масив */
+$status-colors: (
+  primary: #000,
+  success: #27BA6C,
+  info: #03a9f4,
+  warning: #FF8833,
+  danger: #ff1a1a
+);
+
+.message {
+  @each $status, $color in $status-colors {
+
+    &-#{$status} {
+
+      background: $color;
+      display: inline-block;
+      padding: 10px;
+    }
+  }
+}

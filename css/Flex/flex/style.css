@@ -1,0 +1,20 @@
+:root {
+  --body-color: #ccc;
+}
+
+body {
+  margin: 0; /* Убираем отступы */
+  display: flex; /* Включаем флексы */
+  height: 100vh; /* Занимает всю высоту */
+  flex-direction: column; /* Главная ось располагается вертикально */
+}
+
+main {
+  flex: 1; /* Соответствует flex: 1 1 0% */
+}
+
+footer {
+  background: #e4efc7; /* Цвет фона */
+  padding: 10px; /* Поля вокруг текста */
+}
+

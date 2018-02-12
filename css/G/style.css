@@ -1,0 +1,46 @@
+.start {
+  display: inline-block;
+  top: 20px;
+  background: #ccc;
+  color: #fff;
+  padding: 20px;
+}
+
+.start:hover {
+  color: #fff;
+  background: #000;
+
+  transition-delay: 0.5s; /* время ожидания перед запуском эффекта  */
+  transition-duration: 2s; /* сколько должна длиться анимация  */
+}
+
+.prop {
+  width: 150px;
+  height: 100px;
+  background: #ccc;
+
+  transition-duration: 2s;
+  transition-property: width; 
+  /* Устанавливает имя стилевого свойства, значение которого будет отслеживаться для создания эффекта перехода */
+  transition-timing-function: ease-out;
+  /* Устанавливает, насколько быстро должно изменяться значение стилевого свойство для которого применяется эффект перехода */
+}
+
+.prop:hover {
+  width: 250px;
+}
+
+.efect {
+  width: 150px;
+  height: 100px;
+  background: green;
+
+  transition: width 2s, height 2s, transform 2s;
+}
+
+.efect:hover {
+  width: 250px;
+  height: 250px;
+  transform: rotate(180deg);
+}
+
